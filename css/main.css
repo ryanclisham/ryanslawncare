@@ -1,0 +1,317 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-color: #2473f2;
+  background-size: cover;
+}
+
+div.container {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "name";
+}
+
+main {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "carousel"
+    "menu"
+    "reserve";
+}
+
+footer {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "location"
+    "map"
+    "credits"
+    "social";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "logo name";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "carousel menu"
+      "reserve reserve"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "location map"
+    "credits social";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "logo name";
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "carousel"
+      "menu"
+      "reserve"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "location map"
+    "credits social";
+  }
+}
+
+div {
+  text-align: center; /* disable this line once layout works */
+}
+
+main div {
+    min-height: 80px;
+}
+
+div#logo {
+  grid-area: logo;
+}
+
+div#name {
+  grid-area: name;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+div#carousel {
+  border: 2px solid green;
+  grid-area: carousel;
+  overflow: hidden;
+}
+
+div#menu {
+  grid-area: menu;
+}
+
+div#reserve {
+  grid-area: reserve;
+}
+
+div#location {
+  grid-area: location;
+}
+
+div#map {
+  grid-area: map;
+}
+
+div#credits {
+  grid-area: credits;
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #20772d;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+  font-family: 'Kavivanar', cursive;
+  text-align: center;
+}
+
+blink {
+    color: red;
+    -webkit-animation: 2.5s linear infinite condemned_blink_effect; // for android
+    animation: 2.5s linear infinite condemned_blink_effect;
+  }
+  @-webkit-keyframes condemned_blink_effect { // for android
+      0% {
+          visibility: hidden;
+      }
+      50% {
+          visibility: hidden;
+      }
+      100% {
+          visibility: visible;
+      }
+  }
+  @keyframes condemned_blink_effect {
+      0% {
+          visibility: hidden;
+      }
+      50% {
+          visibility: hidden;
+      }
+      100% {
+          visibility: visible;
+      }
+  }
+}
+
+ol {
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/* tables */
+form {
+  padding: 4px;
+}
+
+input {
+  margin: 2px;
+}
+
+select {
+  margin: 2px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+
+}
+
+tr {
+  max-width: 100%;
+}
+
+th {
+  font-family: 'Saira Condensed', sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+/* images */
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+iframe {
+  max-width: 100%
+}
+/* links */
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/

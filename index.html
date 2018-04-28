@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Ryan's Lawn Care</title>
+  <link rel="icon" href="Img/R_logo.png" type="image/png">
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body background="Img/Grass.jpg">
+
+  <div class="container">
+
+    <header>
+      <div id="logo"><a href="https://ryanclisham.github.io/bayside"><img src="Img/Lawn_care.png"></a></div>
+
+      <div id="name">
+        <h1>Ryans Lawn Service</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="about.html">About</a></li>
+       </ul>
+      </div>
+
+    </header>
+
+    <main>
+      <div id="carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="Img/Yard_1.jpg" alt="Restaurant"></div>
+          <div><img src="Img/Yard_2.jpg" alt="Cod"></div>
+          <div><img src="Img/Yard_3.jpg" alt="Burger And Fries"></div>
+          <div><img src="Img/Yard_4.jpg" alt="Hot Wings And Celery"></div>
+        </div>
+      </div>
+
+      <div id="reserve">
+        <h2><b>Welcome To Ryan's Lawn Care!</b></h2>
+        <p>Thanks for stopping by! I hope to see you soon sometime!</p>
+      </div>
+    </main>
+
+    <footer>
+      <div id="location">
+        <h2>Call Me!</h2>
+        <a href="tel:843-229-7433"><img src="Img/Call.png" width="250" height="100"></a>
+        <table align="center">
+          <tr>
+            <th>Hours Of Operation</th>
+          </tr>
+          <tr>
+            <td><p>Monday - Thursday:  6 PM - 8 PM</p></td>
+          </tr>
+          <tr>
+            <td><p>Friday:  6 PM - 9 PM</p></td>
+          </tr>
+          <tr>
+            <td><p>Saturday:  10 AM - 8 PM</p></td>
+          </tr>
+          <tr>
+            <td><p>Sunday:  6 PM - 8 PM</p></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593437.068330283!2d-82.43683855070576!3d34.74784300553103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88578f6662fa1105%3A0xd8aa9d77bf257696!2sGreenville%2C+SC!5e0!3m2!1sen!2sus!4v1524877313871"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div id="credits">
+        <h2>Credits</h2>
+        <p>Copyright © Ryan Clisham 2018</p>
+      </div>
+
+      <div id="social">
+        <h2>Connect With Me!</h2>
+        <a href="https://www.instagram.com/ryanclisham"><img src="Img/Insta.png" width="50" height="50"></a>
+        <a href="https://www.twitter.com/ryanclisham"><img src="Img/Twitter.png" width="50" height="50"></a>
+        <a href="https://www.fb.me/Baysidemyrtle"><img src="Img/Facebook.png" width="50" height="50"></a>
+        <p>*Click on each social media icon to go to the following page*</p>
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+  <script>
+var form = document.getElementById("form")
+form.on('submit', function(e){
+  e.preventDefault()
+  console.log("Hey")
+})
+
+</script>
+
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 3750,
+          autoplayHoverPause: true,
+          dots: false,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+      })
+    });
+  </script>
+
+</body>
+</html>
